@@ -79,7 +79,6 @@ html,
 
 body {
   min-height: 100%;
-  line-height: 1.5;
 }
 
 a:where([class]) {
@@ -1032,7 +1031,107 @@ margin-bottom: 48px;
 .form{
     margin-top: 96px;
 }
+.footer__menu-link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+font-family: 'Inter Tight';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+text-align: center;
+text-transform: uppercase;
 
+color: #FFFFFF;
+}
+
+.footer__logo{
+
+font-family: 'Inter Tight';
+font-style: normal;
+font-weight: 400;
+font-size: 53px;
+
+color: #FFFFFF;
+text-decoration: none;
+margin-bottom: 32px;
+}
+.footer__menu{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__info{
+    width: 435px;
+}
+
+.footer__disclaimer, .footer__company-number, .footer__address{
+font-family: 'Inter Tight';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #FFFFFF;
+
+}
+
+.footer__info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer__contact{
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+width: 435px;
+height: 22px;
+
+font-family: 'Inter Tight';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+
+color: #FFFFFF;
+
+}
+
+.footer__contact-link{
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+}
+.footer__container{
+    margin-top: 96px;
+}
+.rights{
+    margin: auto;
+    margin-top: 148px;
+    padding-bottom: 48px;
+    text-align: center;
+
+font-family: 'Inter Tight';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #FFFFFF;
+
+}
 @media (max-width: 768px) {
     .nav__menu{
         display: none;
@@ -1163,6 +1262,22 @@ margin-bottom: 48px;
 .form{
     background-position: center;
     margin-top: 64px;
+}
+.footer__info{
+    display: none;
+}
+.footer__contact{
+    width: unset;
+    margin-top: 16px;
+}
+.rights{
+    margin-top: 32px;
+}
+.footer__container{
+    margin-top: 64px;
+}
+.footer__logo{
+    font-size: 40px;
 }
 }
 
