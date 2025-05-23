@@ -671,8 +671,110 @@ font-size: 24px;
     font-weight: 400;
 
 }
+.markets__table{
+    
+    border-radius: 12px;
+    max-width: 1200px;
+    margin: auto;
+}
+.markets__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: white;
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: 400;
+    background-color: #212121;
+    height: 62px;
+    padding: 24px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 
+}
+.markets__col-title{
+    width: 180px;
+}
+.hr{
+    height: 1px;
+    width: 100%;
+    background-color: #8C8C8C;
+    opacity: 0.6;
+}
+.markets__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: #1B1B1B;
 
+}
+.markets__col-value{
+    width: 180px;
+    color: white;
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: 400;
+}
+.markets__asset{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.markets__col-value--positive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #2DBD85;
+    color: #2DBD85;
+    border-radius: 8px;
+    width: 120px;
+}
+
+.markets__col-value--negative{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #D33536;
+    color: #D33536;
+    border-radius: 8px;
+    width: 120px;
+}
+.markets__col-title--change{
+    width: 120px;
+}
+.markets__row-bg{
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: #212121;
+}
+.markets__row--border{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.markets__title{
+font-family: 'Unbounded';
+font-style: normal;
+font-weight: 300;
+font-size: 63px;
+line-height: 120%;
+text-align: center;
+
+background: linear-gradient(90deg, #83DEFF 0%, #FF4319 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+margin: auto;
+margin-top: 94px;
+margin-bottom: 48px;
+
+}
 @media (max-width: 768px) {
     .nav__menu{
         display: none;
@@ -724,6 +826,9 @@ font-size: 24px;
     }
     .card-container{
         display: none;
+    }
+    .about{
+        margin-top: 64px;
     }
     .card-container-mobile{
     display: flex;
