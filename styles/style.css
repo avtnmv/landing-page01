@@ -126,6 +126,7 @@ svg * {
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
+    
 }
 
 .container {
@@ -139,6 +140,7 @@ svg * {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 .nav__menu{
     display: flex;
@@ -175,6 +177,7 @@ svg * {
     font-style: normal;
     text-decoration: none;
     color: white;
+    margin-top: 40px;
 }
 
 .nav__register{
@@ -305,7 +308,7 @@ svg * {
     width: 100%;
     height: 100vh;
     color: #fff;
-    z-index: 1000;
+    z-index: 3;
     text-align: center;
     background-color: #1B1B1B;
     transform: translateX(100%);
@@ -341,7 +344,7 @@ svg * {
     position: absolute;
     top: 37px;
     right: 10px;
-    z-index: 1001;
+    z-index: 3;
     border-radius: 20px;
     background: #1B1B1B;
     border: 1px solid #464646;
@@ -785,9 +788,7 @@ margin-bottom: 48px;
     flex-direction: column;
     gap: 24px;
     background: #212121;
-    border-top-left-radius: 12px;
     padding: 24px;
-    border-top-right-radius: 12px;
 }
 
 .markets__mobile-table{
@@ -893,7 +894,7 @@ flex-grow: 0;
   display: block;
   width: 424px;
   height: 42px;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 1rem;
   font-family: inherit;
   font-size: 16px;
   font-weight: 400;
@@ -914,6 +915,7 @@ flex-grow: 0;
   background-position: right 0.75rem center;
   background-size: 1rem;
   padding-right: 2rem;
+  color: #757575;
 }
 
 /* Убираем стандартный цвет у placeholder */
@@ -1132,7 +1134,160 @@ text-align: center;
 color: #FFFFFF;
 
 }
-@media (max-width: 768px) {
+.nav-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 1200px){
+        .container{
+        width: 900px;
+    }
+    .hero__title{
+        font-size: 60px;
+    }
+    .header{
+        height: 750px;
+    }
+    .about__image{
+        width: 350px;
+    }
+    .about__content{
+        width: 420px;
+    }
+    .card-container{
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+    }
+    .about__subtitle{
+        font-size: 50px;
+    }
+    .pricing__card{
+        width: 250px;
+        padding: 24px;
+    }
+
+
+}
+@media (max-width: 960px){
+    .hero__title{
+        font-size: 36px;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .header {
+    height: 550px;
+  }
+  .about__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 60px;
+}
+.approach__container, .markets__container{
+    flex-direction: column;
+    gap: 60px;
+}
+.support__container{
+    flex-direction: column-reverse;
+    gap: 60px;
+}
+.pricing__cards{
+    flex-direction: column;
+    gap: 40px;
+}
+.pricing__card{
+    width: 450px;
+}
+    .nav__menu{
+        display: none;
+    }
+    .container{
+        width: 527px;
+    }
+
+    .footer__info{
+    display: none;
+}
+.footer__contact{
+    width: unset;
+    margin-top: 16px;
+}
+.rights{
+    margin-top: 32px;
+}
+.footer__container{
+    margin-top: 64px;
+}
+.footer__logo{
+    font-size: 40px;
+}
+.pricing__subtitle{
+    font-size: 45px;
+}
+body{
+    overflow-x: hidden;
+}
+  .burger-icon{
+        display: block;
+    }
+    .logo{
+    position: relative;
+    z-index: 10;
+    margin-top: 42px;
+}
+.burger-menu ul {
+  list-style: none;
+
+  margin-top: 120px;
+  text-align: left;
+  text-decoration: none;
+}
+.burger-menu ul li a{
+      color: white;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.burger-hr{
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.2;
+}
+.burger-menu ul li{
+    margin: 20px 0;
+}
+.markets__table{
+    display: none;
+}
+.markets__mobile {
+  display: block;
+}
+.markets__mobile-table-bg{
+    max-width: 500px;
+    margin: auto;
+}
+.markets__mobile-table{
+    max-width: 500px;
+    margin: auto;
+}
+.markets__mobile-radius{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.row-radius{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+}
+
+@media (max-width: 580px) {
     .nav__menu{
         display: none;
     }
@@ -1278,6 +1433,36 @@ color: #FFFFFF;
 }
 .footer__logo{
     font-size: 40px;
+}
+.logo{
+    position: relative;
+    z-index: 10;
+    margin-top: 42px;
+}
+.burger-menu ul {
+  list-style: none;
+
+  margin-top: 120px;
+  text-align: left;
+  text-decoration: none;
+}
+.burger-menu ul li a{
+      color: white;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.burger-hr{
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.2;
+}
+.burger-menu ul li{
+    margin: 20px 0;
 }
 }
 

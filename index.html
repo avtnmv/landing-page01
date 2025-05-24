@@ -17,31 +17,40 @@
   <body>
     <header class="header">
       <div class="container ">
+        <div class="nav-cont">
+            <a href="#" class="logo">LOGO</a>
         <nav class="header__nav nav fade-up fade-delay-1">
-          <a href="#" class="logo">LOGO</a>
           <ul class="nav__menu">
             <li class="nav__item">
-              <a href="#">About us</a>
+              <a href="#about-us">About us</a>
             </li>
             <li class="nav__item">
-              <a href="#">Account Type</a>
+              <a href="#price">Account Type</a>
             </li>
             <li class="nav__item">
-              <a href="#">Information</a>
+              <a href="#info">Information</a>
             </li>
             <li class="nav__item">
-              <a href="#">Trade View</a>
+              <a href="#trade">Trade View</a>
             </li>
             <li class="nav__item">
-              <a href="#">ContAct us</a>
+              <a href="#contact">ContAct us</a>
             </li>
           </ul>
         </nav>
+        </div>
+        
         <div class="burger-menu" id="burger-menu">
-          <ul>
-            <li><a href="#">PROJECTS</a></li>
-            <li><a href="#">STYLES</a></li>
-            <li><a href="#">CONTACT</a></li>
+          <ul class="container">
+            <li class="burger-link"><a href="#about-us">About us</a></li>
+            <div class="burger-hr"></div>
+            <li class="burger-link"><a href="#price">Account Type</a></li>
+            <div class="burger-hr"></div>
+            <li class="burger-link"><a href="#info">Information</a></li>
+            <div class="burger-hr"></div>
+            <li class="burger-link"><a href="#trade">Trade View</a></li>
+            <div class="burger-hr"></div>
+            <li class="burger-link"><a href="#contact">Contact us</a></li>
           </ul>
         </div>
         <div class="burger-icon" id="burger-icon">
@@ -59,7 +68,7 @@
           <p class="hero__description fade-up fade-delay-4">
             Long-term solutions for sustainable growth and protection of your assets in a changing world
           </p>
-          <a href="#" class="hero__cta fade-up fade-delay-5">
+          <a href="#contact" class="hero__cta fade-up fade-delay-5">
             Open trading account
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#a)">
@@ -77,7 +86,7 @@
     </header>
     <main class="main">
       <div class="container">
-        <section class="about fade-up">
+        <section class="about fade-up" id="about-us">
           <div class="about__container">
             <div class="about__content">
               <h2 class="about__title">About us</h2>
@@ -86,7 +95,7 @@
                 In today's world, asset management requires an integrated approach and a broad vision. We strive not just to grow capital, but also to protect it for future generations. Our team of specialists combines decades of experience and knowledge of international markets to offer effective investment solutions in an ever-changing economy
               </p>
             </div>
-            <img class="about__image" src="./assets/images/about-us-img.webp" alt="About us image" width="590" height="551">
+            <img class="about__image" src="./assets/images/about-img.webp" alt="About us image" width="590" height="551">
           </div>
         </section>
         <section class="fade-up cards-container">
@@ -105,7 +114,7 @@
             <img src="./assets/images/card-4-mob.png" alt="" class="card-mob">
           </div>
         </section>
-        <section class="approach fade-up">
+        <section class="approach fade-up" id="info">
           <div class="approach__container">
             <img class="about__image" src="./assets/images/approach-img.webp" alt="About us image" width="590" height="621">
             <div class="about__content">
@@ -126,11 +135,11 @@
                 We offer opportunities in markets ranging from stable developed economies to highly promising emerging regions. Our experts monitor global trends, changes in legislation and the political environment, enabling us to respond to important developments in a timely manner and utilize new growth channels
               </p>
             </div>
-            <img class="about__image" src="./assets/images/markets.webp" alt="About us image" width="540" height="590">
+            <img class="about__image" src="./assets/images/markets-img.webp" alt="About us image" width="540" height="590">
           </div>
         </section>
         <section class="support__container fade-up">
-          <img class="about__image" src="./assets/images/markets.webp" alt="About us image" width="540" height="590">
+          <img class="about__image" src="./assets/images/support-img.webp" alt="About us image" width="540" height="590">
           <div class="about__content">
             <h2 class="about__title">Support</h2>
             <p class="about__subtitle">Ongoing support and transparency</p>
@@ -139,7 +148,7 @@
             </p>
           </div>
         </section>
-        <section class="pricing fade-up">
+        <section class="pricing fade-up" id="price">
           <h1 class="pricing__title">Price</h1>
           <p class="pricing__subtitle">Pick your trading account!</p>
           <p class="pricing__description">
@@ -224,7 +233,7 @@
             </div>
           </div>
         </section>
-        <section class="markets fade-up">
+        <section class="markets fade-up" id="trade">
           <h1 class="markets__title">Experience superior execution & investing conditions</h1>
           <div class="markets__table">
             <div class="markets__header">
@@ -240,221 +249,235 @@
                 <img src="./assets/images/bitcoin.svg" alt="">
                 Bitcoin
               </p>
-              <p class="markets__col-value">106,354.14 USD</p>
-              <p class="markets__col-value markets__col-value--positive">+0.01%</p>
-              <p class="markets__col-value">3366807.000T</p>
-              <p class="markets__col-value">22040.699B</p>
+              <p class="markets__col-value" id="price-btc">106,354.14 USD</p>
+              <p class="markets__col-value markets__col-value--positive" id="change-btc">+0.01%</p>
+              <p class="markets__col-value" id="volume-btc">3366807.000T</p>
+              <p class="markets__col-value" id="marketcap-btc">22040.699B</p>
             </div>
-            <div class="markets__row">
+
+              <div class="markets__row">
               <p class="markets__asset markets__col-value">
                 <img src="./assets/images/Ethereum.svg" alt="">
                 Ethereum
               </p>
-              <p class="markets__col-value ethereum">2,458.20 USD</p>
-              <p class="markets__col-value markets__col-value--negative">-1.36%</p>
-              <p class="markets__col-value">3664075.000T</p>
-              <p class="markets__col-value">682407.026B</p>
+              <p id="price-eth" class="markets__col-value">Loading...</p>
+              <p id="change-eth" class="markets__col-value">Loading...</p>
+              <p id="marketcap-eth" class="markets__col-value">Loading...</p>
+              <p id="volume-eth" class="markets__col-value">Loading...</p>
             </div>
-            <div class="markets__row-bg">
-              <p class="markets__asset markets__col-value">
-                <img src="./assets/images/binance-coin.svg" alt="">
-                Binance Coin
-              </p>
-              <p class="markets__col-value">645.70 USD</p>
-              <p class="markets__col-value markets__col-value--negative">-0.18%%</p>
-              <p class="markets__col-value">622188.000T</p>
-              <p class="markets__col-value">169699.716B</p>
-            </div>
-            <div class="markets__row">
-              <p class="markets__asset markets__col-value">
-                <img src="./assets/images/Solana.svg" alt="">
-                Solana
-              </p>
-              <p class="markets__col-value">165.48 USDD</p>
-              <p class="markets__col-value markets__col-value--positive">+0.28%</p>
-              <p class="markets__col-value">354198.000T</p>
-              <p class="markets__col-value">1375017045.000B</p>
-            </div>
-            <div class="markets__row-bg">
-              <p class="markets__asset markets__col-value">
-                <img src="./assets/images/usdc.svg" alt="">
-                USDC
-              </p>
-              <p class="markets__col-value">1.00 USD</p>
-              <p class="markets__col-value markets__col-value--negative">-0.01%%</p>
-              <p class="markets__col-value">3664075.000T</p>
-              <p class="markets__col-value">682407.026B</p>
-            </div>
-            <div class="markets__row markets__row--border">
-              <p class="markets__asset markets__col-value">
-                <img src="./assets/images/xrp.svg" alt="">
-                XRP
-              </p>
-              <p class="markets__col-value">2.34 USD</p>
-              <p class="markets__col-value markets__col-value--negative">-1.54%</p>
-              <p class="markets__col-value">1245170.000T</p>
-              <p class="markets__col-value">130066654.300B</p>
-            </div>
+
+
+              <div class="markets__row-bg">
+            <p class="markets__asset markets__col-value">
+              <img src="./assets/images/binance-coin.svg" alt="">
+              Binance Coin
+            </p>
+            <p id="price-bnb" class="markets__col-value">Loading...</p>
+            <p id="change-bnb" class="markets__col-value">Loading...</p>
+            <p id="marketcap-bnb" class="markets__col-value">Loading...</p>
+            <p id="volume-bnb" class="markets__col-value">Loading...</p>
           </div>
+
+              <div class="markets__row">
+            <p class="markets__asset markets__col-value">
+              <img src="./assets/images/Solana.svg" alt="">
+              Solana
+            </p>
+            <p id="price-sol" class="markets__col-value">Loading...</p>
+            <p id="change-sol" class="markets__col-value">Loading...</p>
+            <p id="marketcap-sol" class="markets__col-value">Loading...</p>
+            <p id="volume-sol" class="markets__col-value">Loading...</p>
+          </div>
+
+              <div class="markets__row-bg">
+      <p class="markets__asset markets__col-value">
+        <img src="./assets/images/usdc.svg" alt="">
+        USDC
+      </p>
+      <p id="price-usdc" class="markets__col-value">Loading...</p>
+      <p id="change-usdc" class="markets__col-value">Loading...</p>
+      <p id="marketcap-usdc" class="markets__col-value">Loading...</p>
+      <p id="volume-usdc" class="markets__col-value">Loading...</p>
+    </div>
+
+
+        <div class="markets__row markets__row--border">
+      <p class="markets__asset markets__col-value">
+        <img src="./assets/images/xrp.svg" alt="">
+        XRP
+      </p>
+      <p id="price-xrp" class="markets__col-value">Loading...</p>
+      <p id="change-xrp" class="markets__col-value">Loading...</p>
+      <p id="marketcap-xrp" class="markets__col-value">Loading...</p>
+      <p id="volume-xrp" class="markets__col-value">Loading...</p>
+    </div>
+          </div>
+
           <div class="markets__mobile">
-            <div class="markets__mobile-table-bg">
-              <div class="markets__mobile-row markets__mobile-row--header">
-                <p class="markets__mobile-label">Markets</p>
-                <p class="markets__mobile-asset">
-                  <img class="markets__mobile-icon" src="./assets/images/bitcoin.svg" alt="Bitcoin">
-                  <span class="markets__mobile-name">Bitcoin</span>
-                </p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Price</p>
-                <p class="markets__mobile-value">106,354.14 USD</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Change %</p>
-                <p class="markets__mobile-value markets__mobile-value--positive">+0.01%</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Market cap</p>
-                <p class="markets__mobile-value">3366807.000T</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Volume 24h</p>
-                <p class="markets__mobile-value">22040.699B</p>
-              </div>
-            </div>
-            <div class="markets__mobile-table">
-              <div class="markets__mobile-row markets__mobile-row--header">
-                <p class="markets__mobile-label">Markets</p>
-                <p class="markets__mobile-asset">
-                  <img class="markets__mobile-icon" src="./assets/images/Ethereum.svg" alt="Bitcoin">
-                  <span class="markets__mobile-name">Ethereum</span>
-                </p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Price</p>
-                <p class="markets__mobile-value">2,458.20 USD</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Change %</p>
-                <p class="markets__mobile-value markets__mobile-value--negative">-1.36%</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Market cap</p>
-                <p class="markets__mobile-value">3664075.000T</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Volume 24h</p>
-                <p class="markets__mobile-value">682407.026B</p>
-              </div>
-            </div>
-            <div class="markets__mobile-table-bg">
-              <div class="markets__mobile-row markets__mobile-row--header">
-                <p class="markets__mobile-label">Markets</p>
-                <p class="markets__mobile-asset">
-                  <img class="markets__mobile-icon" src="./assets/images/binance-coin.svg" alt="Bitcoin">
-                  <span class="markets__mobile-name">Binance Coin</span>
-                </p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Price</p>
-                <p class="markets__mobile-value">2,458.20 USD</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Change %</p>
-                <p class="markets__mobile-value markets__mobile-value--negative">-1.36%</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Market cap</p>
-                <p class="markets__mobile-value">622188.000T</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Volume 24h</p>
-                <p class="markets__mobile-value">169699.716B</p>
-              </div>
-            </div>
-            <div class="markets__mobile-table">
-              <div class="markets__mobile-row markets__mobile-row--header">
-                <p class="markets__mobile-label">Markets</p>
-                <p class="markets__mobile-asset">
-                  <img class="markets__mobile-icon" src="./assets/images/Solana.svg" alt="Bitcoin">
-                  <span class="markets__mobile-name">Solana</span>
-                </p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Price</p>
-                <p class="markets__mobile-value">165.48 USD</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Change %</p>
-                <p class="markets__mobile-value markets__mobile-value--positive">+0.28%</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Market cap</p>
-                <p class="markets__mobile-value">354198.000T</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Volume 24h</p>
-                <p class="markets__mobile-value">1375017045.000B</p>
-              </div>
-            </div>
-            <div class="markets__mobile-table-bg">
-              <div class="markets__mobile-row markets__mobile-row--header">
-                <p class="markets__mobile-label">Markets</p>
-                <p class="markets__mobile-asset">
-                  <img class="markets__mobile-icon" src="./assets/images/usdc.svg" alt="Bitcoin">
-                  <span class="markets__mobile-name">USDC</span>
-                </p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Price</p>
-                <p class="markets__mobile-value">1.00 USD</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Change %</p>
-                <p class="markets__mobile-value markets__mobile-value--negative">-0.01%</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Market cap</p>
-                <p class="markets__mobile-value">3664075.000T</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Volume 24h</p>
-                <p class="markets__mobile-value">682407.026B</p>
-              </div>
-            </div>
-            <div class="markets__mobile-table">
-              <div class="markets__mobile-row markets__mobile-row--header">
-                <p class="markets__mobile-label">Markets</p>
-                <p class="markets__mobile-asset">
-                  <img class="markets__mobile-icon" src="./assets/images/xrp.svg" alt="Bitcoin">
-                  <span class="markets__mobile-name">XRP</span>
-                </p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Price</p>
-                <p class="markets__mobile-value">2.34 USD</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Change %</p>
-                <p class="markets__mobile-value markets__mobile-value--negative">-1.54%</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Market cap</p>
-                <p class="markets__mobile-value">1245170.000T</p>
-              </div>
-              <div class="markets__mobile-row">
-                <p class="markets__mobile-label">Volume 24h</p>
-                <p class="markets__mobile-value">130066654.300B</p>
-              </div>
-            </div>
-          </div>
+  <div class="markets__mobile-table-bg markets__mobile-radius">
+    <div class="markets__mobile-row markets__mobile-row--header">
+      <p class="markets__mobile-label">Markets</p>
+      <p class="markets__mobile-asset">
+        <img class="markets__mobile-icon" src="./assets/images/bitcoin.svg" alt="Bitcoin">
+        <span class="markets__mobile-name">Bitcoin</span>
+      </p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Price</p>
+      <p id="price-btc-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Change %</p>
+      <p id="change-btc-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Market cap</p>
+      <p id="marketcap-btc-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Volume 24h</p>
+      <p id="volume-btc-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+  </div>
+
+  <div class="markets__mobile-table">
+    <div class="markets__mobile-row markets__mobile-row--header">
+      <p class="markets__mobile-label">Markets</p>
+      <p class="markets__mobile-asset">
+        <img class="markets__mobile-icon" src="./assets/images/Ethereum.svg" alt="Ethereum">
+        <span class="markets__mobile-name">Ethereum</span>
+      </p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Price</p>
+      <p id="price-eth-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Change %</p>
+      <p id="change-eth-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Market cap</p>
+      <p id="marketcap-eth-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Volume 24h</p>
+      <p id="volume-eth-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+  </div>
+
+  <div class="markets__mobile-table-bg">
+    <div class="markets__mobile-row markets__mobile-row--header">
+      <p class="markets__mobile-label">Markets</p>
+      <p class="markets__mobile-asset">
+        <img class="markets__mobile-icon" src="./assets/images/binance-coin.svg" alt="Binance Coin">
+        <span class="markets__mobile-name">Binance Coin</span>
+      </p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Price</p>
+      <p id="price-bnb-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Change %</p>
+      <p id="change-bnb-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Market cap</p>
+      <p id="marketcap-bnb-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Volume 24h</p>
+      <p id="volume-bnb-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+  </div>
+
+  <div class="markets__mobile-table">
+    <div class="markets__mobile-row markets__mobile-row--header">
+      <p class="markets__mobile-label">Markets</p>
+      <p class="markets__mobile-asset">
+        <img class="markets__mobile-icon" src="./assets/images/Solana.svg" alt="Solana">
+        <span class="markets__mobile-name">Solana</span>
+      </p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Price</p>
+      <p id="price-sol-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Change %</p>
+      <p id="change-sol-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Market cap</p>
+      <p id="marketcap-sol-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Volume 24h</p>
+      <p id="volume-sol-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+  </div>
+
+  <div class="markets__mobile-table-bg">
+    <div class="markets__mobile-row markets__mobile-row--header">
+      <p class="markets__mobile-label">Markets</p>
+      <p class="markets__mobile-asset">
+        <img class="markets__mobile-icon" src="./assets/images/usdc.svg" alt="USDC">
+        <span class="markets__mobile-name">USDC</span>
+      </p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Price</p>
+      <p id="price-usdc-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Change %</p>
+      <p id="change-usdc-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Market cap</p>
+      <p id="marketcap-usdc-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Volume 24h</p>
+      <p id="volume-usdc-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+  </div>
+
+  <div class="markets__mobile-table row-radius">
+    <div class="markets__mobile-row markets__mobile-row--header">
+      <p class="markets__mobile-label">Markets</p>
+      <p class="markets__mobile-asset">
+        <img class="markets__mobile-icon" src="./assets/images/xrp.svg" alt="XRP">
+        <span class="markets__mobile-name">XRP</span>
+      </p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Price</p>
+      <p id="price-xrp-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Change %</p>
+      <p id="change-xrp-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Market cap</p>
+      <p id="marketcap-xrp-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+    <div class="markets__mobile-row">
+      <p class="markets__mobile-label">Volume 24h</p>
+      <p id="volume-xrp-mob" class="markets__mobile-value">Loading...</p>
+    </div>
+  </div>
+</div>
+
         </section>
 
       </div>
 
       </div>
 
-        <section class="form fade-up">
+        <section class="form fade-up" id="contact">
           <p class="form-title">Contact us</p>
           <p class="form-subtitle">Today, and especially with the Swiss Vests Client Portal, and more so with our award-winning trading platform, we’ve made your access to the markets extremely easy!</p>
 
@@ -474,8 +497,8 @@
                 <label class="text-field__label" for="email">Email</label>
               </div>
               <div class="text-field">
-                <select class="text-field__input text-field__select" id="country" name="country" required>
-                    <option value="" disabled selected hidden></option>
+                <select class="text-field__input text-field__select" id="country" placeholder="Country" name="country" required >
+                    <option value="" disabled selected hidden placeholder="Country"></option>
                     <!-- страны будут добавлены через JS -->
                 </select>
                 </div>
@@ -496,11 +519,11 @@
     <div class="footer__top">
       <a href="#" class="footer__logo">Logo</a>
       <ul class="footer__menu">
-        <li class="footer__menu-item"><a href="#" class="footer__menu-link">About us</a></li>
-        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Account Type</a></li>
-        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Information</a></li>
-        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Trade View</a></li>
-        <li class="footer__menu-item"><a href="#" class="footer__menu-link">ContAct us</a></li>
+        <li class="footer__menu-item"><a href="#about-us" class="footer__menu-link">About us</a></li>
+        <li class="footer__menu-item"><a href="#price" class="footer__menu-link">Account Type</a></li>
+        <li class="footer__menu-item"><a href="#info" class="footer__menu-link">Information</a></li>
+        <li class="footer__menu-item"><a href="#trade" class="footer__menu-link">Trade View</a></li>
+        <li class="footer__menu-item"><a href="#contact" class="footer__menu-link">ContAct us</a></li>
       </ul>
     </div>
 

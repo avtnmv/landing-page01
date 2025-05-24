@@ -43,30 +43,38 @@
     "Yemen": "+967", "Zambia": "+260", "Zimbabwe": "+263"
   };
 
-  const select = document.getElementById('country');
-  const phoneInput = document.getElementById('phone');
-  let phoneMask;
+const select = document.getElementById('country');
+const phoneInput = document.getElementById('phone');
+let phoneMask;
 
-  // Заполняем список стран
-  for (const country in countryCodes) {
-    const option = document.createElement('option');
-    option.value = country;
-    option.textContent = country;
-    select.appendChild(option);
-  }
+const placeholderOption = document.createElement('option');
+placeholderOption.textContent = 'Country';
+placeholderOption.value = '';
+placeholderOption.disabled = true;
+placeholderOption.selected = true;
+placeholderOption.hidden = true;
+select.appendChild(placeholderOption);
 
-  function setPhoneMask(code) {
-    if (phoneMask) phoneMask.destroy();
+for (const country in countryCodes) {
+  const option = document.createElement('option');
+  option.value = country;
+  option.textContent = country;
+  select.appendChild(option);
+}
 
-    phoneMask = IMask(phoneInput, {
-      mask: `${code} (000) 000-00-00`,
-      lazy: false,
-      placeholderChar: '_'
-    });
-  }
+function setPhoneMask(code) {
+  if (phoneMask) phoneMask.destroy();
 
-  select.addEventListener('change', function () {
-    const selectedCountry = this.value;
-    const code = countryCodes[selectedCountry];
-    setPhoneMask(code);
+  phoneMask = IMask(phoneInput, {
+    mask: `${code} (000) 000-00-00`,
+    lazy: false,
+    placeholderChar: '_'
   });
+}
+
+select.addEventListener('change', function () {
+  const selectedCountry = this.value;
+  const code = countryCodes[selectedCountry];
+  setPhoneMask(code);
+});
+
